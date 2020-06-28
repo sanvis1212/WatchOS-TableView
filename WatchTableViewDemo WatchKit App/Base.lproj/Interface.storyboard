@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchTableViewDemo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="SGI-1e-8eY">
+                            <items>
+                                <tableRow identifier="Row" id="0Kf-xl-XI4" customClass="NoteSelectRow" customModule="WatchTableViewDemo_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" id="uTW-Yr-kOP">
+                                        <items>
+                                            <label width="1" height="0.5" alignment="left" verticalAlignment="center" text="Label" id="ghP-zQ-BDc"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="mainLabel" destination="ghP-zQ-BDc" id="fNc-dB-LMX"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Add New Note" id="Y29-KR-3Ji">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.1176470588" green="0.89019607840000003" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addNewNoteButtonAction" destination="AgC-eL-Hgc" id="Uuk-QB-ivr"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="SGI-1e-8eY" id="q7b-XX-Mar"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+    </scenes>
+</document>
